@@ -1,0 +1,53 @@
+.pageTitle {
+    margin: 20px;
+    justify-self: center;
+}
+
+.pageSplit {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.leftHalf,
+.rightHalf {
+    flex: 1;
+}
+
+.allocationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.allocTable {
+    width: 100%;
+    border-collapse: collapse;
+    color: black;
+    margin-top: 15px;
+}
+
+.allocTable th,
+.allocTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.statsColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.statCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.statCard span {
+    font-size: 16px;
+}

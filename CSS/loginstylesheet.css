@@ -1,0 +1,102 @@
+   :root {
+  --bg-color: #0d1b2a;
+  --text-color: #e0e1dd;
+  --secondary-text: #778da9;
+  --card-bg: #1b263b;
+  --icon-bg: #415a77;
+  --border-color: #415a77;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --accent-color: #778da9;
+  --accent-hover: #a8b2c8;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 18px;
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h2 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--text-color);
+  text-shadow: 2px 2px 5px var(--shadow);
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.signup-form-container {
+  width: 350px;
+}
+
+.signup-form-container input {
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 100%;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.signup-form-container input[type="submit"] {
+  background: var(--icon-bg);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  border-radius: 5px;
+}
+
+.signup-form-container p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--secondary-text);
+}
+
+
+.admin-login {
+  text-align: center;
+  margin-top: 20px;
+}
+.admin-login a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: var(--icon-bg);
+  color: var(--text-color);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.admin-login a:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  color: var(--bg-color);
+}

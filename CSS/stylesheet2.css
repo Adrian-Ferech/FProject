@@ -1,0 +1,98 @@
+/* Remove browser margin addition as it was causing display issues */
+* {
+  margin: 0;
+}
+  /* #1e293b dark-blue (alternate style TBD) */
+/* body{
+  background-color: #faf3e0;
+} */
+
+body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* Navbar Styling */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #3f5bd5, #000000);
+  display: flex;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.navbar li a:hover {
+  background-color: #111111;
+}
+
+.Seperator{
+  display: flex;
+}
+
+.Seperator div{
+  display: flex;
+  flex: 1;
+  padding-bottom: 40px;
+  flex-direction: column;
+}
+
+.lecturerLink{
+  color: #1F497D;
+  text-decoration: none;
+  margin: 40px 0 0 80px;
+  font-size:xx-large;
+  transition: transform 0.3s ease; /* Smooth animation */
+}
+
+.lecturerLink:hover {
+  transform: scale(1.2); /* 1.2 = 120% of original size */
+}
+
+.createProject{
+  justify-self: center;
+}
+
+textarea, input{
+  width: 100%;
+}
+
+/* Project creator */
+
+.multiSelect {
+    position: relative;
+    width: 300px;
+}
+
+.selectBox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    cursor: pointer;
+}
+
+.checkboxes {
+    display: none;
+    border: 1px solid #ccc;
+    position: absolute;
+    background: white;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.checkboxes label {
+    display: block;
+    padding: 5px;
+}
+
+.checkboxes label:hover {
+    background: #f0f0f0;
+}
